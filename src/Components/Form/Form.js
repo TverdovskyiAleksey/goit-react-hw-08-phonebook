@@ -3,7 +3,7 @@ import shortid from 'shortid';
 import style from './Form.module.css';
 import { connect } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux';
-import { contactsSelectors, contactsOperations } from '../redux';
+import { contactsSelectors, contactsOperations } from '../../redux/contacts';
 
 function Form() {
   const [name, setName] = useState('');

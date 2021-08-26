@@ -1,7 +1,7 @@
 import style from './Filter.module.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { contactsSelectors, changeFilter } from '../redux';
+import { contactsSelectors, changeFilter } from '../../redux/contacts';
 
 const Filter = ({ value, onChange }) => (
   <label>
