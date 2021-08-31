@@ -42,5 +42,21 @@ const logOut = createAsyncThunk('auth/logout', async () => {
     // TODO: Add error.message
   }
 });
+
+const fetchCarrentUser = createAsyncThunk('auth/refresh', async (_, thunkAPI) => {
+  const state = thunkAPI.getState();
+  const persistedToken = state.auth.token;
+
+  if (persistedToken === null) {
+    return thunkAPI.rejectWithValue();
+  }
+  token.set(persistedToken);
+  try {
+    const { data } = await axios.get('/users/current');
+    return data;
+  } catch (error) {
+    // TODO: Add error.message
+  }
+});
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { register, logIn, logOut };
+export default { register, logIn, logOut, fetchCarrentUser };

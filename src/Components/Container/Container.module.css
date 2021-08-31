@@ -1,11 +1,12 @@
 .Container {
   width: 1170px;
-  min-height: 300px;
+  /* min-height: 300px; */
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
-  background-color: rgb(139, 139, 179);
-  background-size: cover;
+  padding: 20px;
+  color: #e9ecef;
+  /* background-color: #212529; */
+  /* background-size: cover; */
 }
 
 h1 {

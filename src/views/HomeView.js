@@ -1,6 +1,6 @@
 const HomeView = () => (
   <div>
-    <h1>Приветственная страница сервиса</h1>
+    <h1>Welcome page</h1>
   </div>
 );
 

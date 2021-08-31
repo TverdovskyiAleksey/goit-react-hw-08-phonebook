@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { authOperations } from '../redux/auth';
+import styles from '../styles/AppBar.module.css';
 
 export default function LoginView() {
   const dispatch = useDispatch();
@@ -25,23 +26,36 @@ export default function LoginView() {
     setPassword('');
   };
   return (
-    <div>
+    <div className={styles.Register}>
       <h1>Login page</h1>
-      <form onSubmit={handelSubmit} autoComplete="off">
-        <label>
-          Email
-          <input type="email" name="email" value={email} onChange={handelChange} />
-        </label>
-        <label>
-          Password
-          <input
-            type="password"
-            name="password"
-            value={password}
-            onChange={handelChange}
-          />
-        </label>
-        <button type="submit">Login</button>
+      <form className={styles.form} onSubmit={handelSubmit} autoComplete="off">
+        <div>
+          <label className={styles.label}>
+            Email
+            <input
+              className={styles.input}
+              type="email"
+              name="email"
+              value={email}
+              onChange={handelChange}
+            />
+          </label>
+        </div>
+        <div>
+          <label className={styles.label}>
+            Password
+            <input
+              className={styles.input}
+              type="password"
+              name="password"
+              value={password}
+              onChange={handelChange}
+            />
+          </label>
+        </div>
+        <button className={styles.button} type="submit">
+          Login
+        </button>
       </form>
     </div>
   );

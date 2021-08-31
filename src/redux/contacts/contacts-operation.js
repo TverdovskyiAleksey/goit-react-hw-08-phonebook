@@ -11,7 +11,7 @@ import {
   deleteContactSuccess,
 } from './contacts-action';
 
-axios.defaults.baseURL = 'http://localhost:3000';
+// axios.defaults.baseURL = 'http://localhost:3000';
 
 // eslint-disable-next-line no-unused-vars
 const fetchContacts = () => async dispatch => {
