@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-template"]=this["webpackJsonpgoit-react-hw-template"]||[]).push([[6],{101:function(e,t,c){"use strict";c.r(t);var i=c(1);t.default=function(){return Object(i.jsx)("div",{children:Object(i.jsx)("h1",{children:"Welcome page"})})}}}]);
+//# sourceMappingURL=6.0505d97a.chunk.js.map
